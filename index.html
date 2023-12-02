@@ -92,6 +92,13 @@
             margin: 20px 0 12px 0;
         }
 
+        .form-photo {
+            background-color: rgba(0, 0, 66, 0.3);
+            backdrop-filter: blur(1.5px);
+            box-shadow: inset 2px 2px 3px rgb(0, 176, 211),
+                inset -2px -2px 3px rgb(0, 0, 66);
+        }
+
         form .user-details .input-box {
             margin-bottom: 15px;
             width: calc(100% / 2 - 20px);
@@ -121,10 +128,10 @@
             transition: all 0.3s ease;
         }
 
-        .user-details .input-box input:focus,
+        /* .user-details .input-box input:focus,
         .user-details .input-box input:valid {
-            /* border-color: #9b59b6; */
-        }
+            border-color: #9b59b6;
+        } */
 
         form .gender-details .gender-title {
             font-size: 20px;
@@ -357,10 +364,13 @@
 
     <section class="body">
         <div class="container">
-            <div style="display: inline-block; text-align: center;" class="title d-flex justify-content-center">
-                <!-- <img style="width: 80px;" src="images/National Youth _ Technical Training Center-logo.png" alt=""> -->
+            <div style="display: inline-block; text-align: center;"
+                class="title d-flex justify-content-between align-items-center">
+                <!-- <img style="width: 80px;" src="assets/images/download-removebg-preview.png" alt=""> -->
+                <img class="w-25 p-2 mb-2 form-logo" src="assets/images/download-removebg-preview.png" alt="">
                 <h3>Admission
                     Form</h3>
+                <img class="w-25 p-2 mb-2 form-photo" src="assets/images/download-removebg-preview.png" alt="">
             </div>
             <div class="content">
                 <form action="#">
