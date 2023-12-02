@@ -6,25 +6,27 @@ inputFile.onchange = function () {
 }
 
 
-import React, { useState } from 'react';
+// React started
 
-const ProfilePicUploader = () => {
-    const [profilePicSrc, setProfilePicSrc] = useState('');
+// import React, { useState } from 'react';
 
-    const handleFileChange = (event) => {
-        const file = event.target.files[0];
+// const ProfilePicUploader = () => {
+//     const [profilePicSrc, setProfilePicSrc] = useState('');
 
-        if (file) {
-            setProfilePicSrc(URL.createObjectURL(file));
-        }
-    };
+//     const handleFileChange = (event) => {
+//         const file = event.target.files[0];
 
-    return (
-        <div>
-            <img id="profile-pic" src={profilePicSrc} alt="Profile" />
-            <input type="file" id="input-file" onChange={handleFileChange} />
-        </div>
-    );
-};
+//         if (file) {
+//             setProfilePicSrc(URL.createObjectURL(file));
+//         }
+//     };
 
-export default ProfilePicUploader;
+//     return (
+//         <div>
+//             <img id="profile-pic" src={profilePicSrc} alt="Profile" />
+//             <input type="file" id="input-file" onChange={handleFileChange} />
+//         </div>
+//     );
+// };
+
+// export default ProfilePicUploader;
