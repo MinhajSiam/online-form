@@ -92,19 +92,22 @@
             margin: 20px 0 12px 0;
         }
 
-        .nyttc-form-photo,
-        .nyttc-form-logo {
+        .form-photo {
             background-color: rgba(0, 0, 66, 0.3);
             backdrop-filter: blur(1.5px);
             box-shadow: inset 2px 2px 3px rgb(0, 176, 211),
                 inset -2px -2px 3px rgb(0, 0, 66);
         }
 
-        .nyttc-form-photo img {
-            width: 100%;
+        .form-logo {
+            background-color: rgba(0, 0, 66, 0.3);
+            backdrop-filter: blur(1.5px);
+            box-shadow: inset 2px 2px 3px rgb(0, 176, 211),
+                inset -2px -2px 3px rgb(0, 0, 66);
         }
 
-        .nyttc-form-logo {
+        .form-photo,
+        .form-logo {
             width: 20%;
         }
 
@@ -250,12 +253,13 @@
         }
 
         label {
-            display: block;
-            width: 200px;
-            color: #fff;
-            padding: 12px;
-            margin: 10px auto;
-            border-radius: 5px;
+            /* display: block;
+    width: 200px;
+    background: #e3362c;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px; */
             cursor: pointer;
         }
 
@@ -390,12 +394,11 @@
             <div style="display: inline-block; text-align: center;"
                 class="title d-flex justify-content-between align-items-center">
                 <!-- <img style="width: 80px;" src="assets/images/download-removebg-preview.png" alt=""> -->
-                <img class="px-2 nyttc-form-logo"
-                    src="assets/images/National Youth _ Technical Training Center-logo.png" alt="">
+                <img class="px-2 mb-2 form-logo" src="assets/images/National Youth _ Technical Training Center-logo.png"
+                    alt="">
                 <h3>Admission
                     Form</h3>
-                <label class="nyttc-form-photo" for="input-file"><img src="assets/images/download-removebg-preview.png"
-                        id="profile-pic"></label>
+                <img class="form-photo" src="assets/images/download-removebg-preview.png">
                 <input type="file" accept="image/.jpeg, image/.png, image/.jpg" id="input-file">
             </div>
             <div class="content">
