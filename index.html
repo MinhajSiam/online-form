@@ -397,19 +397,19 @@
                             <input type="text" name="Guardian Phone Number" placeholder="Enter guardian phone number">
                         </div>
                         <div class="input-box">
-                            <span class="details">Religion</span>
-                            <select class="dropdown" name="" id="">
+                            <label class="details" for="religion">Religion</label>
+                            <select class="dropdown" name="Religion">
                                 <option selected disabled value="Choose a course">Choose a religion</option>
-                                <option value="2">Islam</option>
-                                <option value="3">Hindu</option>
-                                <option value="3">Christian</option>
-                                <option value="3">Buddhist</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Buddhist">Buddhist</option>
                             </select>
                         </div>
                         <div class="input-box">
-                            <span class="details">Blood Group</span>
-                            <!-- <input type="text" placeholder="Blood Group" required> -->
-                            <select class="dropdown" name="" id="">
+                            <label class="details" for="bgroup">Blood Group</label>
+                            <!-- <input type="text" name="Blood Group" placeholder="Blood Group"> -->
+                            <select class="dropdown" name="Blood Group" id="">
                                 <option selected disabled value="">Choose one</option>
                                 <option value="A+">A+</option>
                                 <option value="B+">B+</option>
@@ -423,22 +423,32 @@
                         </div>
 
                         <div class="input-box">
-                            <span class="details">Course Name</span>
-                            <!-- <input type="text" placeholder="Course Name" required> -->
-                            <select class="dropdown" name="" id="">
+                            <label class="details" for="cname">Course Name</label>
+                            <!-- <input type="text" name="Course Name" placeholder="Course Name"> -->
+                            <select class="dropdown" name="Course Name">
                                 <option selected disabled value="Choose a course">Choose a course</option>
-                                <option value="2">Computer Office Course (3 Months)</option>
-                                <option value="3">Office Advanced Certificate Course (3 Months)</option>
-                                <option value="3">Office Advanced Certificate Course (6 Months)</option>
-                                <option value="3">Professional Graphics Design (3 Months)</option>
-                                <option value="3">Professional Graphics Design (6 Months)</option>
-                                <option value="3">Computer Graphic Design (3 Months)</option>
-                                <option value="3">Digital Marketing (6 Months)</option>
-                                <option value="3">Diploma in Computer Science (6 Months)</option>
-                                <option value="3">Diploma in Computer Science (12 Months)</option>
-                                <option value="3">Web Design & Development (6 Months)</option>
-                                <option value="3">Diploma in Office Management & Graphic Design (6 Months)</option>
-                                <option value="3">Spoken English (3 Months)</option>
+                                <option value="Computer Office Course (3 Months)">Computer Office Course (3 Months)
+                                </option>
+                                <option value="Office Advanced Certificate Course (3 Months)">Office Advanced
+                                    Certificate Course (3 Months)</option>
+                                <option value="Office Advanced Certificate Course (6 Months)">Office Advanced
+                                    Certificate Course (6 Months)</option>
+                                <option value="Professional Graphics Design (3 Months)">Professional Graphics Design (3
+                                    Months)</option>
+                                <option value="Professional Graphics Design (6 Months)">Professional Graphics Design (6
+                                    Months)</option>
+                                <option value="Computer Graphic Design (3 Months)">Computer Graphic Design (3 Months)
+                                </option>
+                                <option value="Digital Marketing (6 Months)">Digital Marketing (6 Months)</option>
+                                <option value="Diploma in Computer Science (6 Months)">Diploma in Computer Science (6
+                                    Months)</option>
+                                <option value="Diploma in Computer Science (12 Months)">Diploma in Computer Science (12
+                                    Months)</option>
+                                <option value="Web Design & Development (6 Months)">Web Design & Development (6 Months)
+                                </option>
+                                <option value="Diploma in Office Management & Graphic Design (6 Months)">Diploma in
+                                    Office Management & Graphic Design (6 Months)</option>
+                                <option value="Spoken English (3 Months)">Spoken English (3 Months)</option>
                             </select>
                         </div>
                         <!-- <div class="input-box">
@@ -446,8 +456,8 @@
                                     <input type="text" placeholder="Course Duration" required>
                                 </div> -->
                         <div class="input-box">
-                            <span class="details">Course fee</span>
-                            <input type="text" placeholder="Course fee" readonly>
+                            <label class="details" for="cfee">Course fee</label>
+                            <input type="text" name="Course fee" placeholder="Course fee" readonly>
                         </div>
 
                     </div>
@@ -478,7 +488,7 @@
 
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzWVLTkggCuNp_FMStDUXT351NXbqU3PtgfGoDNp9xc4dR0paVseyVYZUmehDas9Sg0/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwe758jv6N_wc9D0PqwepHsIK6zWfwdZutD3HaZmE4mtx51xr-dLKydWbsiveh5C-k/exec'
         const form = document.forms['google-sheet']
 
         form.addEventListener('submit', e => {
