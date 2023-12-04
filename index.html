@@ -65,6 +65,8 @@
 
         label>img {
             width: 45%;
+            max-width: 250px;
+            max-height: 250px;
         }
 
         .container .title {
@@ -291,8 +293,8 @@
                 <img src="assets/images/National Youth _ Technical Training Center-logo.png" class="p-2">
                 <h3>Admission
                     Form</h3>
-                <label class="d-flex justify-content-end" id="profile-pic" for="input-file"><img
-                        src="assets/images/download-removebg-preview.png" class="p-2"></label>
+                <label for="input-file" class="d-flex justify-content-end"><img
+                        src="assets/images/download-removebg-preview.png" class="p-2" id="profile-pic"></label>
                 <input class="pic-preview" type="file" accept="image/.jpeg, image/.png, image/.jpg" id="input-file">
             </div>
             <div class="content">
@@ -443,7 +445,6 @@
         inputFile.onchange = function () {
             profilePic.src = URL.createObjectURL(inputFile.files[0]);
         }
-
     </script>
 
     <!-- Bootstrap -->
