@@ -59,8 +59,12 @@
                 inset -2px -2px 3px rgb(0, 0, 66);
         }
 
-        .title img {
-            width: 17%;
+        .title>img {
+            width: 15%;
+        }
+
+        label>img {
+            width: 45%;
         }
 
         .container .title {
@@ -155,14 +159,14 @@
             justify-content: space-between;
         }
 
-        form .category label {
+        form .category .label {
             display: flex;
             align-items: center;
             cursor: pointer;
             width: 50%;
         }
 
-        form .category label .dot {
+        form .category .label .dot {
             height: 18px;
             width: 18px;
             border-radius: 50%;
@@ -172,11 +176,11 @@
             transition: all 0.3s ease;
         }
 
-        #dot-1:checked~.category label .one,
-        #dot-2:checked~.category label .two,
-        #dot-3:checked~.category label .three,
-        #dot-3:checked~.category label .four,
-        #dot-3:checked~.category label .five {
+        #dot-1:checked~.category .label .one,
+        #dot-2:checked~.category .label .two,
+        #dot-3:checked~.category .label .three,
+        #dot-3:checked~.category .label .four,
+        #dot-3:checked~.category .label .five {
             background: #9b59b6;
             border-color: #d9d9d9;
         }
@@ -258,11 +262,12 @@
             margin: 10px auto;
             border-radius: 5px; */
             cursor: pointer;
+            /* width: 100px; */
         }
 
-        /* input {
+        .pic-preview {
             display: none;
-        } */
+        }
     </style>
 </head>
 
@@ -286,45 +291,47 @@
                 <img src="assets/images/National Youth _ Technical Training Center-logo.png" class="p-2">
                 <h3>Admission
                     Form</h3>
-                <img src="assets/images/download-removebg-preview.png" class="p-2">
+                <label class="d-flex justify-content-end" id="profile-pic" for="input-file"><img
+                        src="assets/images/download-removebg-preview.png" class="p-2"></label>
+                <input class="pic-preview" type="file" accept="image/.jpeg, image/.png, image/.jpg" id="input-file">
             </div>
             <div class="content">
                 <form method="post" name="google-sheet">
                     <div class="user-details">
                         <div class="input-box">
-                            <label class="details" for="sname">Student Name</label>
+                            <label class="details label" for="sname">Student Name</label>
                             <input type="text" name="Student Name" placeholder="Enter your full name">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="fname">Father's Name</label>
+                            <label class="details label" for="fname">Father's Name</label>
                             <input type="text" name="Father's Name" placeholder="Enter your Father's name">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="mname">Mother's Name</label>
+                            <label class="details label" for="mname">Mother's Name</label>
                             <input type="text" name="Mother's Name" placeholder="Enter your Mother's name">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="paddress">Present Address</label>
+                            <label class="details label" for="paddress">Present Address</label>
                             <input type="text" name="Present Address" placeholder="Enter your Present Address">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="peaddress">Permanent Address</label>
+                            <label class="details label" for="peaddress">Permanent Address</label>
                             <input type="text" name="Permanent Address" placeholder="Enter your Permanent Address">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="email">Email</label>
+                            <label class="details label" for="email">Email</label>
                             <input type="email" name="Email" placeholder="Enter your email">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="spnumber">Student Phone Number</label>
+                            <label class="details label" for="spnumber">Student Phone Number</label>
                             <input type="text" name="Student Phone Number" placeholder="Enter student phone number">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="gpnumber">Guardian Phone Number</label>
+                            <label class="details label" for="gpnumber">Guardian Phone Number</label>
                             <input type="text" name="Guardian Phone Number" placeholder="Enter guardian phone number">
                         </div>
                         <div class="input-box">
-                            <label class="details" for="religion">Religion</label>
+                            <label class="details label" for="religion">Religion</label>
                             <select class="dropdown" name="Religion">
                                 <option selected disabled value="Choose a course">Choose a religion</option>
                                 <option value="Islam">Islam</option>
@@ -334,7 +341,7 @@
                             </select>
                         </div>
                         <div class="input-box">
-                            <label class="details" for="bgroup">Blood Group</label>
+                            <label class="details label" for="bgroup">Blood Group</label>
                             <!-- <input type="text" name="Blood Group" placeholder="Blood Group"> -->
                             <select class="dropdown" name="Blood Group" id="">
                                 <option selected disabled value="">Choose one</option>
@@ -350,7 +357,7 @@
                         </div>
 
                         <div class="input-box">
-                            <label class="details" for="cname">Course Name</label>
+                            <label class="details label" for="cname">Course Name</label>
                             <!-- <input type="text" name="Course Name" placeholder="Course Name"> -->
                             <select class="dropdown" name="Course Name">
                                 <option selected disabled value="Choose a course">Choose a course</option>
@@ -383,7 +390,7 @@
                                     <input type="text" placeholder="Course Duration" required>
                                 </div> -->
                         <div class="input-box">
-                            <label class="details" for="cfee">Course fee</label>
+                            <label class="details label" for="cfee">Course fee</label>
                             <input type="text" name="Course fee" placeholder="Course fee" readonly>
                         </div>
 
@@ -393,11 +400,11 @@
                         <input type="radio" name="gender" id="dot-2">
                         <span class="gender-title">Gender</span>
                         <div class="category">
-                            <label for="dot-1">
+                            <label class="label" for="dot-1">
                                 <span class="dot one"></span>
                                 <span class="gender">Male</span>
                             </label>
-                            <label for="dot-2">
+                            <label class="label" for="dot-2">
                                 <span class="dot two"></span>
                                 <span class="gender">Female</span>
                             </label>
@@ -426,16 +433,17 @@
                 .catch(error => console.error('Error!', error.message))
         })
         // POST End
-
-        // Photo Preview Start
+    </script>
+    <script>
         let profilePic = document.getElementById("profile-pic");
         let inputFile = document.getElementById("input-file");
 
         inputFile.onchange = function () {
             profilePic.src = URL.createObjectURL(inputFile.files[0]);
         }
-        // Photo Preview Start
+
     </script>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Fontawesome -->
