@@ -24,12 +24,6 @@
             padding: 10px;
         }
 
-        body {
-            padding: 10px;
-            /* height: 160vh; */
-            /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
-        }
-
         .nyttc-bg-video {
             height: 100vh;
             width: 100%;
@@ -63,6 +57,10 @@
             backdrop-filter: blur(1.5px);
             box-shadow: inset 2px 2px 3px rgb(0, 176, 211),
                 inset -2px -2px 3px rgb(0, 0, 66);
+        }
+
+        .title img {
+            width: 17%;
         }
 
         .container .title {
@@ -248,17 +246,17 @@
             padding: 5px;
             font-size: 15px;
             font-weight: 400;
-            color: #747474;
+            color: #000;
         }
 
         label {
             /* display: block;
-    width: 200px;
-    background: #e3362c;
-    color: #fff;
-    padding: 12px;
-    margin: 10px auto;
-    border-radius: 5px; */
+            width: 200px;
+            background: #e3362c;
+            color: #fff;
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 5px; */
             cursor: pointer;
         }
 
@@ -266,77 +264,6 @@
             display: none;
         } */
     </style>
-    <!-- <style>
-        .login-form {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width: 60%;
-            padding: 20px 0 200px 0;
-        }
-
-        .login-form input {
-            margin-top: 10px;
-            font-size: 15px;
-            font-weight: 700;
-            padding: 5px 10px;
-        }
-
-        .login-form input[type="submit"] {
-            border: 0;
-            background-color: goldenrod;
-            color: whitesmoke;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        .container-main {
-
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            margin-top: 60px;
-            width: 350px;
-            border-radius: 5px;
-            background: #ececec;
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        }
-
-        .login-form a {
-            text-decoration: none;
-            color: slateblue;
-        }
-
-        .login-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        .login-form-2 {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-        }
-
-        .login-form-2 input {
-            margin-top: 1em;
-            font-size: 1em;
-            padding: 5px 10px;
-        }
-
-        .login-form-2 input[type="submit"] {
-            border: 0;
-            border-radius: 5px;
-            background-color: goldenrod;
-            color: #ececec;
-        }
-    </style> -->
 </head>
 
 <body>
@@ -355,10 +282,11 @@
 
     <section class="body">
         <div class="container">
-            <div style="display: inline-block; text-align: center;" class="title d-flex justify-content-center">
-                <!-- <img style="width: 80px;" src="images/National Youth _ Technical Training Center-logo.png" alt=""> -->
+            <div class="title d-flex justify-content-between align-items-center">
+                <img src="assets/images/National Youth _ Technical Training Center-logo.png" class="p-2">
                 <h3>Admission
                     Form</h3>
+                <img src="assets/images/download-removebg-preview.png" class="p-2">
             </div>
             <div class="content">
                 <form method="post" name="google-sheet">
